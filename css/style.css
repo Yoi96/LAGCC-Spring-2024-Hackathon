@@ -59,3 +59,11 @@ a:hover
       grid-template-columns: auto auto auto;
 
 }
+
+
+#main_body
+{
+      width: 100%;
+      height: auto;
+      margin-top: 5em;
+}
