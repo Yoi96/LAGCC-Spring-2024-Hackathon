@@ -19,8 +19,10 @@
       display: block;
       line-height: 3em;
       cursor: pointer;
+      left: 0px;
 
 }
+ 
 
 
 /*****Header's Grid*******/
@@ -28,11 +30,13 @@
 .logo
 {
       grid-area: logo;
+      text-align: left;
 }
  
 .google_translate
 {
       grid-area: google_translate;
+      text-align: right;
 }
 
 .header
