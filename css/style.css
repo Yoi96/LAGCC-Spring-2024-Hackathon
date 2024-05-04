@@ -53,12 +53,26 @@ a:hover
 
 /*****Header's Grid*******/
  
+.logo
+{
+      grid-area: logo;
+      text-align: left;
+}
+ 
+.google_translate
+{
+      grid-area: google_translate;
+      text-align: right;
+}
+
 .header
 {
       display: grid;
-      grid-template-columns: auto  auto;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: "logo google_translate";
 
 }
+
 
 
 #main_body
