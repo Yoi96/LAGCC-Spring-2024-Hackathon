@@ -3,128 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM87DvBtFP9iRjVUo8ddGNAMndRM5Kwu_cfA&usqp=CAU">
-  <title>search</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Spring 2024 Hackathon</title>
  
-  <style>
-    .search-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-    }
-    
-    .search-box {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 300px;
-    }
-    
-    .search-button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #007bff;
-      color: #fff;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
-<div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+<div id="header" class="header">
+    <div id="logo" class="logo">&nbsp;</div>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div id="google_translate" class="google_translate">
+        <div id="google_translate_element"></div>
 
+        <script type="text/javascript" src="js/googletranslate.js"></script>
 
- 
-<div class="search-container">
-  <input type="text" id="search-box" class="search-box" placeholder="type food, healthcare or education">
-  <button id="search-button" class="search-button" type="button">Search</button>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
 </div>
 
-<script> 
  
-var searchBox = document.getElementById("search-box");
-var searchButton = document.getElementById("search-button");
+ 
+<div class="search_container">
+  <input type="text" id="search_box" class="search_box" placeholder="type food, healthcare or education">
 
- 
-searchButton.addEventListener("click", function() 
-{
-  redirectToPage();
-}
-);
- 
-searchBox.addEventListener("keypress", function(event) {
- 
-    if (event.key === 'Enter') {
- 
-        event.preventDefault();
- 
-        redirectToPage();
-    }
-}
-);
+  <button id="search_button" class="search_button" type="button">Search</button>
+</div>
 
- 
-function redirectToPage() {
-  
-    var searchText = searchBox.value.toLowerCase();
-    
- 
-    if (searchText === "food") 
-    {
-        window.location.href = "https://www.google.com";
-    } 
-    else if (searchText === "healthcare") 
-    {
-        window.location.href = "https://www.yahoo.com";
-    } 
-    else if (searchText === "education") 
-    {
-        window.location.href = "https://www.baidu.com";
-    } 
-    else 
-    {
-        alert("Please type 'food', 'healthcare', or 'education' in the search box.");
-    }
-}
-</script>
+<script type="text/javascript" src="js/search_bar.js"></script>
 
 </body>
 </html>
 
-<!---------------
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>修改锚链接</title>
-</head>
-<body>
-
- 按钮用于修改锚链接 
-<button id="changeAnchorButton">Change Anchor Link</button>
-
-<script>
-// 获取用于修改锚链接的按钮
-var changeAnchorButton = document.getElementById("changeAnchorButton");
-
-// 添加点击事件监听器
-changeAnchorButton.addEventListener("click", function() {
-    // 将锚链接更改为指定值
-    window.location.hash = "newAnchor";
-});
-</script>
-
-</body>
-</html>
-
--->

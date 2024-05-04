@@ -1,0 +1,77 @@
+ 
+#header
+{
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+      
+}
+
+.logo
+{
+      grid-area: logo;
+}
+ 
+.google_translate
+{
+      grid-area: google_translate;
+}
+
+.header
+{
+      display: grid;
+      grid-template-areas: 'logo google_translate';
+
+}
+
+#logo
+{
+      padding: 0px;
+      margin: 0px;
+      height: auto;
+      background: url("../images/logo.png") no-repeat;
+      background-position:center;
+      background-size:contain;
+      display: block;
+      line-height: 3em;
+
+}
+
+
+
+
+
+/**Search CSS***/
+.search_container 
+{
+      display: flex;
+      justify-content: center;
+      margin-top: 3em;
+      line-height: 2em;
+
+}
+    
+.search_box 
+{
+      border: 1px solid #ccc;
+      width: 300px;
+      border-right: none;
+      line-height: 2em;
+}
+    
+.search_button 
+{
+      border: none;
+      background: #000066;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      line-height: 2em;
+      text-align: center;
+}
+
+.search_button:hover
+{
+      background:#E41B23;
+}
