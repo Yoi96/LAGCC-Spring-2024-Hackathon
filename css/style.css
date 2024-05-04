@@ -4,9 +4,8 @@
       width: 100%;
       height: auto;
       padding: 0px;
-      margin: 0px;
-      display: flex;
-      justify-content: center;
+      margin: 0px auto;
+
       
 }
 
@@ -44,7 +43,7 @@
 .header
 {
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 2fr 1fr;
       grid-template-areas: "logo google_translate";
 
 }
