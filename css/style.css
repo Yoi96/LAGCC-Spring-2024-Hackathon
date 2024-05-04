@@ -8,6 +8,23 @@
       
 }
 
+#logo
+{
+      padding: 0px;
+      margin: 0px;
+      height: auto;
+      background: url("../images/logo.png") no-repeat;
+      background-position:center;
+      background-size:contain;
+      display: block;
+      line-height: 3em;
+      cursor: pointer;
+
+}
+
+
+/*****Header's Grid*******/
+
 .logo
 {
       grid-area: logo;
@@ -21,22 +38,11 @@
 .header
 {
       display: grid;
-      grid-template-areas: 'logo google_translate';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "logo google_translate";
 
 }
 
-#logo
-{
-      padding: 0px;
-      margin: 0px;
-      height: auto;
-      background: url("../images/logo.png") no-repeat;
-      background-position:center;
-      background-size:contain;
-      display: block;
-      line-height: 3em;
-
-}
 
 
 
