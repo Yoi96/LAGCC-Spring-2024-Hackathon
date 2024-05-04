@@ -56,13 +56,13 @@ a:hover
 .logo
 {
       grid-area: logo;
-      text-align: left;
+ 
 }
  
 .google_translate
 {
       grid-area: google_translate;
-      text-align: right;
+ 
 }
 
 .header
@@ -79,5 +79,7 @@ a:hover
 {
       width: 100%;
       height: auto;
+      margin: 0px;
+      padding: 0px;
       margin-top: 5em;
 }
