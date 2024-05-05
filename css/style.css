@@ -22,7 +22,7 @@ a:hover
 
 #wrap
 {
-    width: 1024px;
+    width: 100%;
     height: auto;
     margin: 0px auto;
 }
@@ -82,4 +82,32 @@ a:hover
       margin: 0px auto;
       padding: 0px;
       margin-top: 5em;
+}
+
+#finder
+{
+      text-align: center;
+
+}
+
+find_sevices
+{
+      font-family: "MARBOLD";
+      src:url("fonts/MARBOLD.TTF");
+      font-size:5.2em;
+      background-image: linear-gradient(to bottom,#E41B23, #000066);
+      color: #ffffff;  
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;  
+ 
+     
+}
+
+grey_font
+{
+      color: grey;
+      font-family: 'arial';
+      font-size: 1em;
+
 }
