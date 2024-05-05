@@ -87,6 +87,7 @@ a:hover
       margin: 0px;
       padding: 0px;
       margin-top: 5em;
+      margin-bottom: 3em;
 }
 
 #finder
@@ -117,17 +118,21 @@ grey_font
 
 #footer
 {
+      position: fixed;
+      left: 0;
+      bottom: 0;
       width: 100%;
-      height:auto;
-      padding: 0px;
       line-height: 3em;
       text-align: center;
       font-family: 'Helvetica';
       src:url("fonts/Helvetica-Bold.ttf");
-      margin-top: 5em;
+      margin-top:10em;
       text-transform: capitalize; 
       font-size: 0.5em;
       margin: 0px auto;
+      /*color: white;
+      background: linear-gradient(to right,#E41B23, #000066);*/
+
 }
 
 .google_translate
