@@ -62,18 +62,25 @@ a:hover
 .google_translate
 {
       grid-area: google_translate;
-      text-align: center;
  
 }
 
 .header
 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       grid-template-areas: "logo google_translate";
 
 }
 
+/*
+#google_translate_element
+{
+      background: black;
+      line-height: 2em;
+      width: 5em;
+      height: auto;
+}*/
 
 
 #main_body
